@@ -1,7 +1,7 @@
     weight_decay = 0.0005
     weights_regularizer = tf.contrib.layers.l2_regularizer(weight_decay)
     
-    with tf.variable_scope("LeviHassnerBN", "LeviHassnerBN", [images]) as scope:
+    with tf.variable_scope("Layer_Prune", "Layer_Prune", [images]) as scope:
                          
 
         prune_input = tf.keras.Input(tensor=images)
