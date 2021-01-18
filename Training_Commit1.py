@@ -37,7 +37,7 @@ from tensorflow.examples.tutorials.mnist import input_data
 tf.app.flags.DEFINE_boolean('prune', False,
                            'no pruning')
 
-def loss(logits, labels):  # Levi Hassner 
+def loss(logits, labels):  
     labels = tf.cast(labels, tf.int32)
     cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(
         logits=logits, labels=labels, name='cross_entropy_per_example')
